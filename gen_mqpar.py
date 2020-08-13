@@ -3,7 +3,7 @@
 
 import argparse
 import os
-import sys 
+import sys
 import re
 import time
 
@@ -32,7 +32,7 @@ mqpar_text = re.sub(r'\<fastaFilePath\>(.|\n|\r)*\<\/fastaFilePath\>', fasta_fil
 #print(fasta_file_fullpath)
 
 ## replace the raw files path in the xml
-file_counter = 0 
+file_counter = 0
 file_path_repl_text = '<filePaths>\n'
 
 for folder in args.raw_files_folder:
@@ -42,7 +42,7 @@ for folder in args.raw_files_folder:
     for dir in dirs:
         file_path_repl_text += ('\t<string>' + os.path.join(os.path.abspath(folder), dir) + '</string>\n')
         file_counter += 1 
-    
+        
 file_path_repl_text += '   </filePaths>'
 
 mqpar_text = re.sub(r'\<filePaths\>(.|\n|\r)*\<\/filePaths\>', file_path_repl_text, mqpar_text)
@@ -76,7 +76,7 @@ threads_tag = ('<numThreads>' + str(args.threads) + '</numThreads>')
 mqpar_text = re.sub(r'\<numThreads\>(.|\n|\r)*\<\/numThreads\>', threads_tag, mqpar_text)
 
 # write the MQ version
-MQ_version = ('<maxQuantVersion>' + re.sub(r"_", ".", str(args.mq_version)) + '</maxQuantVersion>')
+MQ_version = ('<maxQuantVersion>' + re.sub(r"_", ".", str(args.mq_version)) + '</maxQuantVersion>') 
 mqpar_text = re.sub(r'\<maxQuantVersion\>(.|\n|\r)*\<\/maxQuantVersion\>', MQ_version, mqpar_text)
 
 ## write output xml file
@@ -96,6 +96,7 @@ print('XML write success!')
 #source /home/waftab/.bashrc
 #srun mono $MQ_1_6_14_0 /work/project/becimh_005/Shibo3/mqpar_mod_14.xml
 #srun mono $MQ_1_6_15_0 /work/project/becimh_005/Shibo3/mqpar_mod_15.xml
+
 ## create the slurm script
 slurm_script = ('#!/usr/bin/sh\n'
 '#SBATCH --job-name={JOBNAME}\n'
