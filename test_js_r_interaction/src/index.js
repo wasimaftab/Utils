@@ -50,7 +50,8 @@ function callSync(script, args, options) {
     } else {
         return {
             pid: result.pid,
-            error: result.stdout.toString()
+            error: result.stderr.toString()
+            //error: result.stdout.toString()
         };
     }
 }
