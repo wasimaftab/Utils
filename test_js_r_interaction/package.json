@@ -1,0 +1,19 @@
+{
+  "name": "test_js_r_interaction",
+  "version": "1.0.0",
+  "main": "main.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "electron .",
+    "package-mac": "electron-packager . --overwrite --asar --platform=darwin --arch=x64 --extra-resource=./r_codes --prune=true --out=release-builds-mac",
+    "package-linux": "electron-packager . --overwrite --asar --platform=linux --arch=x64 --extra-resource=./r_codes --prune=true --out=release-builds-linux"
+  },
+  "dependencies": {
+    "electron-is-dev": "^1.2.0",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "electron": "10.1.5",
+    "electron-packager": "15.2.0"
+  }
+}

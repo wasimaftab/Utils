@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+</head>
+
+<body>
+
+    <h2>Calculate e<sup>a</sup> + e<sup>b</sup> (a & b are integers)</h2>
+    <label for="a">1<=a<=5:</label> <input type="number" id="a" name="a" min="1" max="5" value="1">
+            <br>
+            <br>
+            <label for="b">1<=b<=5:</label> <input type="number" id="b" name="b" min="1" max="5" value="1">
+                    <br>
+                    <br>
+                    <div>
+                        <button type="button" id="butt">Click Me!</button>
+                    </div>
+                    <div id="output">
+                        <h4 id="result"></h4>
+                        <h4 id="r_version"></h4>
+                    </div>
+
+                    <script src="./index.js"></script>
+                    <!-- <script src="./js_call_r.js"></script> -->
+</body>
+
+</html>
