@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+</head>
+
+<body>
+    <h1>We are using</h1>
+    <h3>node
+        <script>
+            document.write(process.versions.node)
+        </script>
+    </h3>
+
+    <h3>electron
+        <script>
+            document.write(process.versions.electron)
+        </script>
+    </h3>
+
+    <h3>chrome
+        <script>
+            document.write(process.versions.chrome)
+        </script>
+    </h3>
+
+    <h3 id="mode"></h3>
+    <h3 id="path"></h3>
+
+
+    <script src="./index.js"></script>
+</body>
+
+</html>

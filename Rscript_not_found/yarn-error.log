@@ -1,0 +1,36 @@
+Arguments: 
+  /home/wasim/.nvm/versions/node/v13.1.0/bin/node /usr/share/yarn/bin/yarn.js init
+
+PATH: 
+  /opt/GOss/Gossto.jar:/home/wasim/lapack-3.7.1/SRC:/opt/ClusterONE:/home/wasim/.nvm/versions/node/v13.1.0/bin:/opt/Anaconda3/bin:/opt/Anaconda3/condabin:/opt/GOss/Gossto.jar:/home/wasim/lapack-3.7.1/SRC:/opt/ClusterONE:/home/wasim/torch/install/bin:/home/wasim/torch/install/bin:/home/wasim/torch/install/bin:/home/wasim/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/lib/jvm/java-8-oracle/bin:/usr/lib/jvm/java-8-oracle/db/bin:/usr/lib/jvm/java-8-oracle/jre/bin:/opt/MMM-master:/opt/phylip-3.696/exe:/usr/lib/jvm/java-8-oracle/jre/bin:/home/wasim/Downloads/idlex-1.13:/opt/Cytoscape_v3.4.0:/home/wasim/Desktop/saintq/bin:/opt/wps-office_10.1.0.5672~a21_x86_64:/opt/csv2tab:/opt/MMM-master:/opt/phylip-3.696/exe:/usr/lib/jvm/java-8-oracle/jre/bin:/home/wasim/Downloads/idlex-1.13:/opt/Cytoscape_v3.4.0:/home/wasim/Desktop/saintq/bin:/opt/wps-office_10.1.0.5672~a21_x86_64:/opt/csv2tab
+
+Yarn version: 
+  1.22.5
+
+Node version: 
+  13.1.0
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: canceled
+      at Interface.<anonymous> (/usr/share/yarn/lib/cli.js:137009:13)
+      at Interface.emit (events.js:210:5)
+      at Interface._ttyWrite (readline.js:887:16)
+      at ReadStream.onkeypress (readline.js:191:10)
+      at ReadStream.emit (events.js:210:5)
+      at emitKeys (internal/readline/utils.js:433:14)
+      at emitKeys.next (<anonymous>)
+      at ReadStream.onData (readline.js:1153:36)
+      at ReadStream.emit (events.js:210:5)
+      at addChunk (_stream_readable.js:326:12)
+
+npm manifest: 
+  No manifest
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
