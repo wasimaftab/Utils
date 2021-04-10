@@ -5,11 +5,41 @@
     <meta charset="UTF-8">
     <!-- <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-eval' 'unsafe-inline';" /> -->
     <title>testing clustergrammer web</title>
+
+    <link rel="stylesheet" href="../lib/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../lib/css/bootstrap.css">
+    <link rel="stylesheet" href="../css/custom.css">
 </head>
 
 <body>
     <div id="cy"></div>
-    <script src='./renderer.js'></script>
+    <!-- Insert this line above script imports  -->
+    <script>
+        if (typeof module === 'object') {
+            window.module = module;
+            module = undefined;
+        }
+    </script>
+    <!-- Required JS Libraries -->
+    <script src="../lib/js/d3.js"></script>
+    <script src="../lib/js/jquery-1.11.2.min.js"></script>
+    <script src="../lib/js/underscore-min.js"></script>
+    <script src="../lib/js/bootstrap.min.js"></script>
+
+    <!-- optional modules -->
+    <!-- <script src='js/Enrichrgram.js'></script> -->
+    <script src='../js/hzome_functions.js'></script>
+    <!-- <script src='js/send_to_Enrichr.js'></script> -->
+
+    <!-- Clustergrammer JS -->
+    <script src='../clustergrammer.js'></script>
+
+    <!-- make clustergram -->
+    <script src='../js/load_clustergram.js'></script>
+
+    <!-- Insert this line after script imports -->
+    <script>if (window.module) module = window.module;</script>
+
 </body>
 
 </html>
