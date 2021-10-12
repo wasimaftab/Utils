@@ -11,7 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "clustergrammer": "^1.19.5",
-    "electron": "12.0.2",
+    "electron": "12.1.0",
     "electron-reloader": "^1.0.1",
     "fs": "^0.0.1-security",
     "path": "^0.12.7",
